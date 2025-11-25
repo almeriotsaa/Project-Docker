@@ -3,11 +3,11 @@ name: Deploy to Docker
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
-    runs-on: AlmerioTsany
+    runs-on: [self-hosted, Linux, X64, rio]
 
     steps:
       - name: Test version
